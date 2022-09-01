@@ -1,12 +1,40 @@
-var currentNumberWrapper = document.getElementById("currentNumber");
-var currentNumber = 0;
+// var respostaWrapper = document.getElementById("resposta");
+// var resposta;
 
-function increment() {
-    currentNumber = currentNumber +1;
-    currentNumberWrapper.innerHTML = currentNumber;
+
+
+// function responder() {
+//     resposta = "O numero ";
+//     respostaWrapper.innerHTML = resposta;
+// }
+
+function comparaNumeros(num1,num2){
+
+    const primeiraFrase = criaPrimeiraFrase(num1,num2);
+    const segundaFrase = criaSegundaFrase(num1,num2);
+    
+    return`${primeiraFrase} ${segundaFrase}`
+    
 }
 
-function decrement() {
-    currentNumber = currentNumber -1;
-    currentNumberWrapper.innerHTML = currentNumber;
+function criaPrimeiraFrase(num1,num2){
+    let saoIguais ='';
+    
+    (num1 === num2)  ? saoIguais ="são iguais" : saoIguais ="não são iguais";
+    return `Os números ${num1} e ${num2} ${saoIguais}.`
 }
+
+function criaSegundaFrase(num1,num2){
+    const soma = num1 + num2;
+    let resultado10 = 'menor';
+    let resultado20 = 'menor';
+    const compara10 = soma > 10;
+    const compara20 = soma >20;
+
+    if(compara10)  { resultado10 = 'maior' }
+    if(compara20)  { resultado20 = 'maior' }
+
+    return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20. `
+}
+
+console.log(comparaNumeros(1,2))
