@@ -7,7 +7,7 @@
 
 <h3> Todos os códigos feitos estarão commitados dentro deste repositório.</h3>
 <br>
-<h3> ⏰ Duração: 2h</h3>
+<h3> ⏰ Duração: 1h</h3>
 <h3> 🏅 Insignia:</h3>
 <a href="#"><img src="https://hermes.digitalinnovation.one/courses/badge/22efbe24-6719-4210-a850-935468e140d4.png" height="100"></a><br>
 <h3> 🧾 Certificado:</h3>
